@@ -45,6 +45,11 @@
         display: none;
     }
 }
+@media screen and (max-width: 767px) {
+    .navBarTextsDiv{
+        display: none;
+    }
+}
 .logInButtonDIv{
     display: flex;
     gap: 8px;
@@ -52,6 +57,24 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .logInButtonDIv{
         display: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    .logInButtonDIv{
+        display: none;
+    }
+}
+.burgerIcon{
+    display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .burgerIcon{
+        display: flex;
+    }
+}
+@media screen and (max-width: 767px){
+    .burgerIcon{
+        display: flex;
     }
 }
 .navBarWhiteText{
@@ -116,6 +139,11 @@ h1{
     font-size: 72px;
     font-weight: 600;
 }
+@media screen and (max-width: 767px) {
+    h1{
+        padding: 4px;
+    }
+}
 
 .demoButton{
     padding: 16px 22px;
@@ -139,9 +167,10 @@ h1{
 }
 .whiteText{
     color: #FFF;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
 }
+
 
 .companiesMAinDiv{
     display: flex;
@@ -158,6 +187,11 @@ h1{
     flex-wrap: wrap;
     gap: 24px;
 }
+@media screen and (max-width: 767px) {
+    .companyLogosDiv{
+        flex-direction: column; 
+    }
+}
 .companyLogosDiv{
     display: flex;
     flex-wrap: wrap;
@@ -166,7 +200,9 @@ h1{
     color: #535862;
     font-size: 16px;
 }
-
+.centera{
+    text-align: center;
+}
 .lightPurpleMainDIv{
     display: flex;
     background-color: #F2EDFF;
@@ -176,7 +212,16 @@ h1{
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .lightPurpleMainDIv{
-        gap: 30px;        
+        gap: 30px;  
+        justify-content: center;      
+    }
+}
+@media screen and (max-width: 767px) {
+    .lightPurpleMainDIv{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 48px;
     }
 }
 .lightPurpleMiniDiv{
@@ -200,7 +245,12 @@ h1{
     .purpleDivsWrapper{
         flex-direction: column;
     }
-
+}
+@media screen and (max-width: 767px) {
+    .purpleDivsWrapper{
+        flex-direction: column;
+        gap: 40px;
+    }
 }
 
 .firstcolumnDiv{
@@ -247,6 +297,11 @@ h2{
         padding: 0px;
     }
 }
+@media screen and (max-width: 767px) {
+    .featuresMainDIv{
+        padding: 0px;
+    }
+}
 .mainTextDiv{
     width: 100%;
     display: flex;
@@ -264,6 +319,22 @@ h2{
     display: flex;
     padding: 13px 0px 13px 32px;
     justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+    .biggerDivWithImg{
+        flex-direction: column;
+    }
+}
+.thirdsMockup{
+    display: none;
+}
+@media screen and (max-width: 767px) {
+    .thirdsMockup{
+        display: flex;
+        margin-top: 48px;
+        width: 100%;
+        margin-bottom: 65px;
+    }
 }
 .shareInbocesMainDiv{
     display: flex;
@@ -321,6 +392,12 @@ h2{
         gap: 64px;
     }
 }
+@media screen and (max-width: 767px) {
+    .pricingPlansMainDIv{
+        flex-direction: column;
+        gap: 48px;
+    }
+}
 .pricingCardsDiv{
     display: flex;
     gap: 32px;
@@ -329,6 +406,13 @@ h2{
     .pricingCardsDiv{
         width: 100%;
         justify-content: space-between;
+    }
+}
+@media screen and (max-width: 767px) {
+    .pricingCardsDiv{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
     }
 }
 .pricingTextdsDiv{
@@ -402,19 +486,42 @@ a{
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .girlImageMainDIv{
-        margin-top: 24px;
+        margin-top: 96px;
         margin-bottom: 24px;
         padding: 0px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .girlImageMainDIv{
+        padding: 0px;
+        margin-top: 24px;
+        flex-direction: column;
     }
 }
 .purpleDivWrapper{
     padding: 0px 32px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .purpleDivWrapper{
+        padding: 0px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .purpleDIv{
+        flex-direction: column;
+    }
 }
 .ImageS{
     margin-left: 30px;
 }
 
 @media screen and (min-width: 768px)  and (max-width: 1024px) {
+    .ImageS{
+        display: none;
+    }
+}
+@media screen and (max-width: 767px) {
     .ImageS{
         display: none;
     }
@@ -446,9 +553,20 @@ a{
     gap: 24px;
     padding: 64px;
 }
+@media screen and (max-width: 767px) {
+    .purpleTextsDiv{
+        padding: 40px 24px 0px 24px;
+    }
+}
 .avatarGirl{
     border-top-right-radius: 24px;
     border-bottom-right-radius: 24px;
+}
+@media screen and (max-width: 767px) {
+    .avatarGirl{
+        border-bottom-left-radius: 16px;
+        border-top-right-radius: 0px;
+    }
 }
 .starsDiv{
     display: flex;
@@ -458,6 +576,11 @@ a{
     color: #FFF;
     font-size: 36px;
     font-weight: 500;
+}
+@media screen and (max-width: 767px) {
+    .whiteBiggerText{
+        font-size: 22px;
+    }
 }
 .lightPurpleText{
     font-size: 16px;
@@ -475,6 +598,12 @@ a{
     background-color: #FAFAFA;
     padding: 64px 80px;
 }
+@media screen and (max-width: 767px) {
+    .footerMainDiv{
+        padding: 0px;
+        padding-top: 64px;
+    }
+}
 .lastLineFooterDiv{
     display: flex;
     width: 100%;
@@ -482,10 +611,38 @@ a{
     padding: 32px 32px 0px 32px;
     border-top: 1px solid #E9EAEB;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .lastLineFooterDiv{
+        padding: 32px 0px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .lastLineFooterDiv{
+        flex-direction: column;
+        gap: 24px;
+        padding: 0px;
+        padding-top: 32px;
+        margin-left: 32px;
+    }
+}
+
 .footerDiv{
     display: flex;
     justify-content: space-between;
     padding: 0px 32px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .footerDiv{
+        flex-direction: column;
+        gap: 48px;
+        padding: 0px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .footerDiv{
+        flex-direction: column;
+        gap: 48px;
+    }
 }
 .mainLogo{
     width: 140px;
@@ -497,9 +654,20 @@ a{
     flex-direction: column;
     gap: 32px;
 }
+@media screen and (max-width: 767px) {
+    .firstDiv{
+        order: -3;
+    }
+}
 .twoRoswDIv{
     display: flex;
     gap: 90px;
+}
+@media screen and (max-width: 767px) {
+    .twoRoswDIv{
+        flex-direction: column;
+        gap: 32px;
+    }
 }
 .colDiv{
     display: flex;
@@ -516,6 +684,11 @@ a{
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+@media screen and (max-width: 767px) {
+    .emnailFooterDiv{
+        order: -2;
+    }
 }
 .emalDIv{
     display: flex;
@@ -538,4 +711,60 @@ a{
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
+}
+.whiteHeaderText{
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 600;
+}
+.girlInPurpleSecondMainDiv{
+    display: none;
+    width: 100%;
+    justify-content: center;
+    border-radius: 16px;
+    background-color: #53389E;
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.buttonsDDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+.secondGirlImg{
+    display: flex;
+    width: 100%;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+.textsPurpleDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 24px 0px 24px;
+}
+.secondPurpleDivWrapper{
+    display: none;
+    justify-content: center;
+    width: 100%;
+}
+@media screen and (max-width: 767px) {
+    .secondPurpleDivWrapper{
+        display: flex;
+        padding: 16px;
+    }
+}
+.getStartedPurpleBUtton{
+    background-color: #7F56D9;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+.learnMOreWhiteBUtton{
+    padding: 12px 18px;
+    border-radius: 8px;
+    background-color: #FFF;
 }
