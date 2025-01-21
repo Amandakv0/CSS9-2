@@ -30,6 +30,11 @@
     justify-content: space-between;
     width: 100%;
 }
+@media screen and (max-width: 767px) {
+    .navBarMainDiv{
+        padding: 16px;
+    }
+}
 
 .navBar{
     display: flex;
@@ -122,14 +127,33 @@ button{
     flex-direction: column;
     gap: 24px;
 }
+@media screen and (max-width: 767px) {
+    .headerTexts{
+        padding: 6px;
+        align-items: flex-start;
+    }
+}
 .headerButtonsDiv{
     display: flex;
     gap: 12px;
+}
+@media screen and (max-width: 767px) {
+    .headerButtonsDiv{
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+        padding: 12px;
+    }
 }
 .purpleMiniText{
     color: #E9D7FE;
     font-size: 16px;
     font-weight: 600;
+}
+@media screen and (max-width: 767px) {
+    ..purpleMiniText{
+        width: 100%;
+    }
 }
 h1{
     text-align: center;
@@ -141,6 +165,9 @@ h1{
 }
 @media screen and (max-width: 767px) {
     h1{
+        width: 100%;
+        font-size: 36px;
+        text-align: left;
         padding: 4px;
     }
 }
@@ -151,6 +178,8 @@ h1{
     background-color: #FFF;
 }
 .biggerSignUpButton{
+    display: flex;
+    justify-content: center;
     padding: 16px 22px;
     border-radius: 10px;
     background-color: #7F56D9;
@@ -159,6 +188,7 @@ h1{
     display: flex;
     gap: 10px;
     align-items: center;
+    justify-content: center;
 }
 .demo{
     color: #414651;
@@ -179,6 +209,11 @@ h1{
     padding: 96px 80px;
     align-items: center;
 }
+@media screen and (max-width: 767px) {
+    .companiesMAinDiv{
+        padding: 60px 16px;
+    }
+}
 .companyLogosDiv{
     display: flex;
     width: 100%;
@@ -190,8 +225,11 @@ h1{
 @media screen and (max-width: 767px) {
     .companyLogosDiv{
         flex-direction: column; 
+        align-items: center;
+        padding: 0px;
     }
 }
+
 .companyLogosDiv{
     display: flex;
     flex-wrap: wrap;
@@ -222,6 +260,7 @@ h1{
         width: 100%;
         align-items: center;
         gap: 48px;
+        padding: 60px 16px;
     }
 }
 .lightPurpleMiniDiv{
@@ -309,6 +348,11 @@ h2{
     gap: 12px;
     padding-left: 32px;
 }
+@media screen and (max-width: 767px) {
+    .mainTextDiv{
+        padding-left: 16px;
+    }
+}
 .miniPurpleText{
     color: #6941C6;
     font-size: 16px;
@@ -323,6 +367,7 @@ h2{
 @media screen and (max-width: 767px) {
     .biggerDivWithImg{
         flex-direction: column;
+        padding-left: 16px;
     }
 }
 .thirdsMockup{
@@ -396,6 +441,7 @@ h2{
     .pricingPlansMainDIv{
         flex-direction: column;
         gap: 48px;
+        padding: 60px 16px;
     }
 }
 .pricingCardsDiv{
@@ -411,7 +457,6 @@ h2{
 @media screen and (max-width: 767px) {
     .pricingCardsDiv{
         flex-direction: column;
-        width: 100%;
         align-items: center;
     }
 }
@@ -420,6 +465,11 @@ h2{
     flex-direction: column;
     gap: 12px;
     padding-left: 32px;
+}
+@media screen and (max-width: 767px) {
+    .pricingTextdsDiv{
+        padding-left: 16px;
+    }
 }
 .cardMainDiv{
     display: flex;
@@ -656,6 +706,7 @@ a{
 }
 @media screen and (max-width: 767px) {
     .firstDiv{
+        width: 100%;
         order: -3;
     }
 }
@@ -694,6 +745,11 @@ a{
     display: flex;
     gap: 16px;
 }
+@media screen and (max-width: 767px) {
+    .emalDIv{
+        flex-direction: column;
+    }
+}
 .emailInput{
     padding: 10px 12px;
     width: 229px;
@@ -701,6 +757,11 @@ a{
     border: 1px solid #7F56D9;
     background-color: #FFF;
     box-shadow: 4px 4px 20.9px 0px rgba(127, 86, 217, 0.25);
+}
+@media screen and (max-width: 767px) {
+    .emailInput{
+        width: 100%;
+    }
 }
 .purpleButtonSave{
     padding: 10px 16px;
